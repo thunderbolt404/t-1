@@ -69,7 +69,9 @@ Group1.nrofHosts = 1
 Group1.movementModel = StationaryMovement
 Group1.nodeLocation = 2600,2200
 Group1.groupID = S
-Group1.interface1 = highspeedInterface
+Group1.nrofInterfaces = 2
+Group1.interface1 = btInterface
+Group1.interface2 = highspeedInterface
 Group1.bufferSize = 1G
 Group1.speed = 0,0
 
@@ -86,7 +88,9 @@ Group2.nrofHosts = 1
 Group2.movementModel = StationaryMovement
 Group2.nodeLocation = 1300, 500
 Group2.groupID = S
-Group2.interface1 = highspeedInterface
+Group2.nrofInterfaces = 2
+Group2.interface1 = btInterface
+Group2.interface2 = highspeedInterface
 Group2.bufferSize = 1G
 Group2.speed = 0,0
 
@@ -105,7 +109,9 @@ Group3.nodeLocation = 2314,1283
 Group3.groupID = S
 Group3.bufferSize = 1G
 Group3.speed = 0,0
-Group3.interface1 = highspeedInterface
+Group3.nrofInterfaces = 2
+Group3.interface1 = btInterface
+Group3.interface2 = highspeedInterface
 
 Group4.nrofApplications = 1
 Group4.application1 = Source
@@ -120,9 +126,11 @@ Group4.nrofHosts = 1
 Group4.movementModel = StationaryMovement
 Group4.nodeLocation = 2800,750
 Group4.groupID = S
-Group4.interface1 = highspeedInterface
 Group4.bufferSize = 1G
 Group4.speed = 0,0
+Group4.nrofInterfaces = 2
+Group4.interface1 = btInterface
+Group4.interface2 = highspeedInterface
 
 ## Consumer Application
 Sink.type = CCN_application
