@@ -1,6 +1,6 @@
 # CCN-DTN routing-layer configuration
 ## Scenario settings
-Scenario.name = TEST_%%Group.router%%_%%MovementModel.rngSeed%%_%%Group.msgTtl%%_%%Group.bufferSize%%_%%Sink.queryDistribution%%
+Scenario.name = set_SPRAY_AND_WAIT_%%Group.router%%_%%MovementModel.rngSeed%%_%%Group.msgTtl%%_%%Group.bufferSize%%_%%Sink.queryDistribution%%
 Scenario.simulateConnections = true
 Scenario.updateInterval = 0.1
 #21600 - 6 hour
@@ -20,7 +20,7 @@ highspeedInterface.transmitRange = 200
 ## Common group settings
 Group.movementModel = ShortestPathMapBasedMovement
 Group.router = CCNRouter
-Group.bufferSize = [128M;224M;320M;416M;512M]
+Group.bufferSize = [10M;20M;40M;80M;160M]
 Group.waitTime = 0, 120
 Group.nrofInterfaces = 1
 Group.interface1 = btInterface
@@ -35,11 +35,10 @@ CCNRouter.binaryMode = true
 # for prophet (must be > 0)
 CCNRouter.secondsInTimeUnit = 30
 CCNRouter.processedListCapacity = 5000
-CCNRouter.interestSize = 50
-CCNRouter.contentSize = 1024
+CCNRouter.interestSize = 1k
+CCNRouter.contentSize = 512k
 # PIT timeout is in simulation seconds
 CCNRouter.pitTimeout = 1200
-
 
 ## Movement model settings
 MovementModel.rngSeed = [34;87]
