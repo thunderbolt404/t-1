@@ -1,6 +1,6 @@
 # CCN-DTN routing-layer configuration
 ## Scenario settings
-Scenario.name = set_SPRAY_AND_WAIT_%%Group.router%%_%%MovementModel.rngSeed%%_%%Group.msgTtl%%_%%Group.bufferSize%%_%%Sink.queryDistribution%%
+Scenario.name = h_6_set_EPIDEMIC_%%Group.router%%_%%MovementModel.rngSeed%%_%%Group.msgTtl%%_%%Group.bufferSize%%_%%Sink.queryDistribution%%
 Scenario.simulateConnections = true
 Scenario.updateInterval = 0.1
 #21600 - 6 hour

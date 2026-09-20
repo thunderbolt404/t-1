@@ -1,10 +1,10 @@
 # CCN-DTN routing-layer configuration
 ## Scenario settings
-Scenario.name = set_SPRAY_AND_WAIT_%%Group.router%%_%%MovementModel.rngSeed%%_%%Group.msgTtl%%_%%Group.bufferSize%%_%%Sink.queryDistribution%%
+Scenario.name = h_6_set_SPRAY_AND_WAIT_%%Group.router%%_%%MovementModel.rngSeed%%_%%Group.msgTtl%%_%%Group.bufferSize%%_%%Sink.queryDistribution%%
 Scenario.simulateConnections = true
 Scenario.updateInterval = 0.1
 #21600 - 6 hour
-Scenario.endTime = 21600
+Scenario.endTime = 10000
 Scenario.nrofHostGroups = 12
 
 ## Interface-specific settings
@@ -134,8 +134,8 @@ Group4.interface2 = highspeedInterface
 ## Consumer Application
 Sink.type = CCN_application
 Sink.seedQuery = 12
-Sink.interval = 100
-Sink.numOfMsgToGenerate = 20
+Sink.interval = 10
+Sink.numOfMsgToGenerate = 5
 Sink.queryRange = 1,200
 #1 for random, 2 for ZipF
 #Sink.queryDistribution = [2;1]
